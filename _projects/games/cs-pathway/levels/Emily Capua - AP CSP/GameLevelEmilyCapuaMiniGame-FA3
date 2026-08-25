@@ -1,0 +1,147 @@
+// Adventure Game Custom Level
+// Exported from GameBuilder on 2026-08-25T01:38:12.127Z
+// How to use this file:
+// 1) Save as assets/js/adventureGame/GameLevelEmilyCapuaMiniGame.js in your repo.
+// 2) Reference it in your runner or level selector. Examples:
+//    import GameLevelPlanets from '/assets/js/GameEnginev1/GameLevelPlanets.js';
+//    import GameLevelEmilyCapuaMiniGame from '/assets/js/adventureGame/GameLevelEmilyCapuaMiniGame.js';
+//    export const gameLevelClasses = [GameLevelPlanets, GameLevelEmilyCapuaMiniGame];
+//    // or pass it directly to your GameControl as the only level.
+// 3) Ensure images exist and paths resolve via 'path' provided by the engine.
+// 4) You can add more objects to this.classes inside the constructor.
+
+import GameEnvBackground from '/assets/js/GameEnginev1/essentials/GameEnvBackground.js';
+import Player from '/assets/js/GameEnginev1/essentials/Player.js';
+import Npc from '/assets/js/GameEnginev1/essentials/Npc.js';
+import Barrier from '/assets/js/GameEnginev1/essentials/Barrier.js';
+
+class GameLevelEmilyCapuaMiniGame {
+    constructor(gameEnv) {
+        const path = gameEnv.path;
+        const width = gameEnv.innerWidth;
+        const height = gameEnv.innerHeight;
+
+/**
+ * Background: Sky Kingdom provides the environment
+ * and setting for this game level.
+ */
+
+        const bgData = {
+            name: "custom_bg",
+            src: path + "/images/gamebuilder/bg/clouds.jpg",
+            pixels: { height: 720, width: 1280 }
+        };
+
+/**
+ * Player: Kirby is the character controlled by the user.
+ * The player uses the configured movement keys and starts
+ * at the selected position.
+ */
+
+        const playerData = {
+            id: 'playerData',
+            src: path + "/images/gamebuilder/sprites/kirby.png",
+            SCALE_FACTOR: 5,
+            STEP_FACTOR: 1000,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: { x: 100, y: 300 },
+            pixels: { height: 36, width: 569 },
+            orientation: { rows: 1, columns: 13 },
+            down: { row: 0, start: 0, columns: 3 },
+            downRight: { row: 0, start: 0, columns: 3, rotate: Math.PI/16 },
+            downLeft: { row: 0, start: 0, columns: 3, rotate: -Math.PI/16 },
+            left: { row: 0, start: 0, columns: 3 },
+            right: { row: 0, start: 0, columns: 3 },
+            up: { row: 0, start: 0, columns: 3 },
+            upLeft: { row: 0, start: 0, columns: 3, rotate: Math.PI/16 },
+            upRight: { row: 0, start: 0, columns: 3, rotate: -Math.PI/16 },
+            hitbox: { widthPercentage: 0, heightPercentage: 0 },
+            keypress: { up: 87, left: 65, down: 83, right: 68 }
+            };
+
+/**
+ * NPC: The slime acts as a non-playable character.
+ * It is positioned on the right side of the level
+ * and displays a greeting when interacted with.
+ */
+        
+        const npcData1 = {
+            id: 'bart',
+            greeting: 'Welcome to Sky Kingdom!',
+            src: path + "/images/gamebuilder/sprites/slime.png",
+            SCALE_FACTOR: 8,
+            ANIMATION_RATE: 50,
+            INIT_POSITION: { x: 500, y: 300 },
+            pixels: { height: 225, width: 225 },
+            orientation: { rows: 4, columns: 4 },
+            down: { row: 0, start: 0, columns: 3 },
+            right: { row: Math.min(1, 4 - 1), start: 0, columns: 3 },
+            left: { row: Math.min(2, 4 - 1), start: 0, columns: 3 },
+            up: { row: Math.min(3, 4 - 1), start: 0, columns: 3 },
+            upRight: { row: Math.min(3, 4 - 1), start: 0, columns: 3 },
+            downRight: { row: Math.min(1, 4 - 1), start: 0, columns: 3 },
+            upLeft: { row: Math.min(2, 4 - 1), start: 0, columns: 3 },
+            downLeft: { row: 0, start: 0, columns: 3 },
+            hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
+            dialogues: ['Welcome to Sky Kingdom!'],
+            /**
+             * Interation: 
+             * The player interacts with the NPC during gameplay.
+             * 
+             * Reaction: 
+             * When the interaction is triggered the NPC will display
+             * its configured dialouge message
+             */
+            reaction: function() { if (this.dialogueSystem) { this.showReactionDialogue(); } else { console.log(this.greeting); } },
+            interact: function() { if (this.dialogueSystem) { this.showRandomDialogue(); } }
+        };
+
+/**
+ * Barrier: A vertical collision wall that creates
+ * an obstacle between areas of the level.
+ */
+
+        const dbarrier_1 = {
+            id: 'dbarrier_1', x: 269, y: 111, width: 16, height: 227, visible: false,
+            hitbox: { widthPercentage: 0.0, heightPercentage: 0.0 },
+            fromOverlay: true
+        };
+
+        /**
+ * Rock Asset: A new rock image added as an environmental
+ * object variation. The image is loaded from the game's
+ * images directory using the configured file path.
+ */
+const rockData = {
+    id: 'rock',
+    greeting: '',
+    src: path + "/images/rock.png",
+    SCALE_FACTOR: 2,
+    ANIMATION_RATE: 0,
+    INIT_POSITION: { x: 350, y: 400 },
+    pixels: { height: 512, width: 512 },
+    orientation: { rows: 1, columns: 1 },
+    down: { row: 0, start: 0, columns: 1 },
+    right: { row: 0, start: 0, columns: 1 },
+    left: { row: 0, start: 0, columns: 1 },
+    up: { row: 0, start: 0, columns: 1 },
+    upRight: { row: 0, start: 0, columns: 1 },
+    downRight: { row: 0, start: 0, columns: 1 },
+    upLeft: { row: 0, start: 0, columns: 1 },
+    downLeft: { row: 0, start: 0, columns: 1 },
+    hitbox: { widthPercentage: 0.8, heightPercentage: 0.8 },
+    dialogues: []
+};
+
+this.classes = [      { class: GameEnvBackground, data: bgData },
+      { class: Player, data: playerData },
+      { class: Npc, data: npcData1 },
+      { class: Npc, data: rockData },
+      { class: Barrier, data: dbarrier_1 }
+];
+
+        
+    }
+}
+
+export default GameLevelEmilyCapuaMiniGame;
