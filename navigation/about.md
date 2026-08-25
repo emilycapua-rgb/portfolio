@@ -5,7 +5,7 @@ permalink: /about/
 comments: true
 ---
 
-## As a conversation Starter
+## As a conversation starter
 
 Here are some places I have lived.
 
@@ -113,11 +113,10 @@ Here is what I did at those places
 
 ### Culture, Family, and Fun
 
-Everything for me, as for many others, revolves around family and faith.
-
-- My mother told me that I was Danish, English. and Irish, here is my researched [family tree]({{site.baseurl}}/images/about/familytree.png)
-- My family is pretty big as I have been married twice, my 1st wife passed away.  We have had 5 kids, 4 adopted by me, 1 biological.  Plus, there are three grandkids.  My name to my grandkids is Abuilito.
-- The gallery of pics has some of my family, fun, culture and faith memories.
+- I am half Filipino and half Chinese.
+- My family is composed of my mom, dad, older sister and older brother.
+- I have a pet dog too!
+- Here's some pictures:
 
 <comment>
 Gallery of Pics, scroll to the right for more ...
