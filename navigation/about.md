@@ -27,7 +27,6 @@ Instagram: [cl0.v3rs](https://www.instagram.com/cl0.v3rs/)
 
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/EmilyPicture1.jpeg" alt="My Photo 1">
-  <img src="{{site.baseurl}}/images/about/EmilyPiture2.jpeg" alt="My Photo 2">
   <img src="{{site.baseurl}}/images/about/EmilyPicture3.jpeg" alt="My Photo 3">
   <img src="{{site.baseurl}}/images/about/DashiPicture.jpeg" alt="My Photo 4">
 </div>
