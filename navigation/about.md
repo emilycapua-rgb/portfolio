@@ -119,8 +119,8 @@ Here is what I did at those places
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/EmilyPicture1.jepg" alt="My Photo 1">
-  <img src="{{site.baseurl}}/images/about/EmilyPiture2.jepg" alt="My Photo 2">
-  <img src="{{site.baseurl}}/images/about/EmilyPicture3.jepg" alt="My Photo 3">
-  <img src="{{site.baseurl}}/images/about/DashiPicture.jepg" alt="My Photo 4">
+  <img src="{{site.baseurl}}/images/about/EmilyPicture1.jpeg" alt="My Photo 1">
+  <img src="{{site.baseurl}}/images/about/EmilyPiture2.jpeg" alt="My Photo 2">
+  <img src="{{site.baseurl}}/images/about/EmilyPicture3.jpeg" alt="My Photo 3">
+  <img src="{{site.baseurl}}/images/about/DashiPicture.jpeg" alt="My Photo 4">
 </div>
