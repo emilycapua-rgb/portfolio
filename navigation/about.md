@@ -5,13 +5,10 @@ permalink: /about/
 comments: true
 ---
 
-## As a conversation starter
+## Emily Capua
 
-Here are some places I have lived.
+This is me!
 
-<comment>
-Flags are made using Wikipedia images
-</comment>
 
 <style>
     /* Style looks pretty compact, 
@@ -97,7 +94,7 @@ Flags are made using Wikipedia images
     }
 </script>
 
-### Journey through Life
+### Contact Info:
 
 Here is what I did at those places
 
@@ -111,7 +108,7 @@ Here is what I did at those places
 - 🏢 San Diego CA Qualcomm, Satellite Comm and 1st Mobile OS (BREW) '96 to '19
 - 👨‍🏫 San Diego CA Teacher of Computer Science @ Del Norte High School San Diego '19 to present
 
-### Culture, Family, and Fun
+### About Me!
 
 - I am half Filipino and half Chinese.
 - My family is composed of my mom, dad, older sister and older brother.
@@ -122,16 +119,8 @@ Here is what I did at those places
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
+  <img src="{{site.baseurl}}/images/about/EmilyPicture1.jepg" alt="My Photo 1">
+  <img src="{{site.baseurl}}/images/about/EmilyPiture2.jepg" alt="My Photo 2">
+  <img src="{{site.baseurl}}/images/about/EmilyPicture3.jepg" alt="My Photo 3">
+  <img src="{{site.baseurl}}/images/about/DashiPicture.jepg" alt="My Photo 4">
 </div>
