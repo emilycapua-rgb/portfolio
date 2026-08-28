@@ -35,7 +35,7 @@ Instagram: [cl0.v3rs](https://www.instagram.com/cl0.v3rs/)
 
 <style>
 .image-gallery img {
-  width: 250px;
+  width: 100px;
   height: auto;
 }
 </style>
