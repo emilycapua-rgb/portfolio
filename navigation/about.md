@@ -21,6 +21,7 @@ Instagram: [cl0.v3rs](https://www.instagram.com/cl0.v3rs/)
 ### About Me!
 
 - I am half Filipino and half Chinese.
+- I am 17
 - My family is composed of my mom, dad, older sister and older brother.
 - I have a pet dog too!
 - Here's some pictures:
