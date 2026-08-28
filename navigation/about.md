@@ -32,3 +32,10 @@ Instagram: [cl0.v3rs](https://www.instagram.com/cl0.v3rs/)
   <img src="{{site.baseurl}}/images/about/DashiPicture.jpeg" alt="My Photo 4">
   <img src="{{site.baseurl}}/images/about/ChineseFlag.png" alt="My Photo 5">
 </div>
+
+<style>
+.image-gallery img {
+  width: 250px;
+  height: auto;
+}
+</style>
