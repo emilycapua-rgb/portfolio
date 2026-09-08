@@ -61,8 +61,8 @@ This is me!
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "0/01/Flag_of_California.svg", "greeting": "California", "description": "2008 - now"},
-        {"flag": "ChineseFlag.png", "greeting": "China", "description": "ethnicity"},
-        {"flag": "FilipinoFlag.png", "greeting": "Philippines", "description": "ethnicity"},
+        {"flag": "ChineseFlag.svg", "greeting": "China", "description": "ethnicity"},
+        {"flag": "FilipinoFlag.svg", "greeting": "Philippines", "description": "ethnicity"},
     ];
 
     // 3a. Consider how to update style count for size of container
