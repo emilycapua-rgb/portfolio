@@ -61,8 +61,16 @@ This is me!
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "0/01/Flag_of_California.svg", "greeting": "California", "description": "2008 - now"},
-        {"flag": "ChineseFlag.svg", "greeting": "China", "description": "ethnicity"},
-        {"flag": "FilipinoFlag.svg", "greeting": "Philippines", "description": "ethnicity"},
+        {
+        "flag": "{{site.baseurl}}/images/about/ChineseFlag.png",
+        "greeting": "China",
+        "description": "ethnicity"
+    },
+    {
+        "flag": "{{site.baseurl}}/images/about/FilipinoFlag.png",
+        "greeting": "Philippines",
+        "description": "ethnicity"
+    }
     ];
 
     // 3a. Consider how to update style count for size of container
@@ -75,7 +83,7 @@ This is me!
         gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
         // Add "img" HTML tag for the flag
         var img = document.createElement("img");
-        img.src = http_source + location.flag; // concatenate the source and flag
+        img.src = location.flag; // concatenate the source and flag
         img.alt = location.flag + " Flag"; // add alt text for accessibility
 
         // Add "p" HTML tag for the description
