@@ -1,3 +1,12 @@
+---
+layout: post
+codemirror: true
+title: Ground Zero
+description: New ground zero project
+permalink: /ground/zero
+---
+
+
 {
  "cells": [
   {
